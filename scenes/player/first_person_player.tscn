@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://xy1u36rwlwxh"]
+[gd_scene load_steps=4 format=3 uid="uid://xy1u36rwlwxh"]
 
 [ext_resource type="Script" uid="uid://xcp70xifcusr" path="res://scripts/first_person_player.gd" id="1_hj8oy"]
+[ext_resource type="PackedScene" uid="uid://dvam1x5ous107" path="res://assets/models/Theresa - Free Test.glb" id="2_54wrl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l2dgy"]
 
@@ -11,8 +12,11 @@ script = ExtResource("1_hj8oy")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.56369, -0.11068171)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.055, -0.03)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14878571, -0.08432084)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_l2dgy")
+
+[node name="Theresa - Free Test" parent="." instance=ExtResource("2_54wrl")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0.25, -0.1)
