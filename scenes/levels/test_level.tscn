@@ -15,7 +15,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 [node name="Test_Level" type="Node3D"]
 
 [node name="Floor_MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0)
+transform = Transform3D(50, 0, 0, 0, 0.5, 0, 0, 0, 50, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_fr1um")
 mesh = SubResource("BoxMesh_3p835")
 
